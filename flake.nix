@@ -31,7 +31,6 @@
           pkgs.fortune
           pkgs.fastfetch
           pkgs.magic-wormhole
-          pkgs.mosh
           pkgs.claude-code
         ];
 
@@ -44,8 +43,13 @@
         enable = true;
         onActivation.cleanup = "uninstall";
 
-        taps = [ "tw93/tap" ];
-        brews = [ "mole" ];
+        taps = [ 
+          "tw93/tap" 
+        ];
+        brews = [ 
+          "mole"
+          "mosh"
+        ];
         casks = [];
       };
 
