@@ -30,6 +30,9 @@
           pkgs.cowsay
           pkgs.fortune
           pkgs.fastfetch
+          pkgs.magic-wormhole
+          pkgs.mosh
+          pkgs.claude-code
         ];
 
       nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
