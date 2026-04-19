@@ -26,7 +26,6 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
-          pkgs.vim
           pkgs.cowsay
           pkgs.fortune
           pkgs.fastfetch
