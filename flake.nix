@@ -48,6 +48,7 @@
         brews = [ 
           "mole"
           "mosh"
+          "telnet"
         ];
         casks = [];
       };
