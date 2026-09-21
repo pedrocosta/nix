@@ -51,6 +51,7 @@
           "telnet"
           "tio"
           "yt-dlp"
+          "ffmpeg"
           "ffmpeg-full"
         ];
         casks = [];
