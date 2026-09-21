@@ -49,6 +49,9 @@
           "mole"
           "mosh"
           "telnet"
+          "tio"
+          "yt-dlp"
+          "ffmpeg-full"
         ];
         casks = [];
       };
