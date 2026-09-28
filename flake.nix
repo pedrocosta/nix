@@ -22,11 +22,20 @@
       #Turn off nix-darwin’s management of the Nix installation, set:
       nix.enable = false;
 
+      nixpkgs.overlays = [
+        (final: prev: {
+          recode = prev.recode.overrideAttrs (_: {
+            doCheck = false;
+          });
+        })
+      ];
+
+
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
-          pkgs.cowsay
+          pkgs.neo-cowsay
           pkgs.fortune
           pkgs.fastfetch
           pkgs.magic-wormhole
@@ -43,7 +52,7 @@
         onActivation.cleanup = "uninstall";
 
         taps = [ 
-          "tw93/tap" 
+          "tw93/tap"
         ];
         brews = [ 
           "mole"
