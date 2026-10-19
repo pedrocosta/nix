@@ -53,6 +53,7 @@
 
         taps = [ 
           "tw93/tap"
+          "riscv-software-src/riscv"     
         ];
         brews = [ 
           "mole"
@@ -62,6 +63,10 @@
           "yt-dlp"
           "ffmpeg"
           "ffmpeg-full"
+          "Platformio"
+          "riscv-tools"
+          "pkg-config"
+          "libusb"
         ];
         casks = [];
       };
