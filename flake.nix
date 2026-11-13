@@ -68,7 +68,9 @@
           "pkg-config"
           "libusb"
         ];
-        casks = [];
+        casks = [
+          "caskhub"
+        ];
       };
 
       # Necessary for using flakes on this system.
